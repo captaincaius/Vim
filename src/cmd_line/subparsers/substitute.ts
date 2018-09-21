@@ -135,7 +135,6 @@ export function parseSubstituteCommandArgs(args: string): node.SubstituteCommand
 
     if (args.length === 0) {
       // special case for :s
-      console.log('hi');
       return new node.SubstituteCommand({
         pattern: undefined,
         replace: '', // ignored in this context
