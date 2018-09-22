@@ -133,7 +133,7 @@ export function parseSubstituteCommandArgs(args: string): node.SubstituteCommand
     let flags: number;
     let count: number;
 
-    if (args.length === 0) {
+    if (!args) {
       // special case for :s
       return new node.SubstituteCommand({
         pattern: undefined,
